@@ -31,7 +31,7 @@ Esta es una solución al [desafío de la página de recetas en Frontend Mentor](
 ### Enlaces
 
 - URL de la solución: [GitHub](https://github.com/jean266/Pagina_recetas)
-- URL del sitio en vivo: [Vervel]()
+- URL del sitio en vivo: [Vervel](https://pagina-recetas.vercel.app/)
 
 ## Mi proceso
 

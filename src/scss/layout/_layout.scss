@@ -1,0 +1,166 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.container_main {
+  background-color: v.$white;
+  font-size: 1.5rem;
+
+  @include m.tablet {
+    max-width: 70rem;
+    margin: 10rem auto;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+
+    .container_imagen {
+        padding: 3.5rem;
+        
+        .imagen_main {
+            border-radius: 1.5rem;
+        }
+    }
+
+  }
+
+  main {
+      padding: 0 2.5rem;
+      
+      @include m.tablet {
+          padding: 0 3.5rem;
+      }
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    text-align: start;
+    margin-left: 0;
+    margin-right: 0;
+
+    @include m.tablet {
+        font-size: 3.3rem;
+    }
+  }
+}
+
+/* header */
+.header {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  
+  @include m.tablet {
+      padding: 0rem 3.5rem;
+  }
+
+  .header_title {
+    text-align: start;
+    line-height: 4rem;
+    margin-top: 0;
+
+    @include m.tablet {
+        font-size: 4rem;   
+    }
+  }
+}
+
+/* Estilos Generales */
+.ingredients, 
+.instructions {
+    border-bottom: 1px solid v.$lightGrey;
+    padding-bottom: 2rem;
+}
+
+.ingredients_title,
+.instructions_title,
+.nutrition_title {
+    color: v.$nutmeg;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+.time_list, 
+.ingredients_list, 
+.instructions_list {
+    
+    li {
+        margin-bottom: 1.5rem;
+
+        p {
+            padding-left: 2rem;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    span {
+        font-weight: 800;
+    }
+}
+
+/* Preparation time */
+.time {
+    background-color: v.$roseWhite;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 4rem;
+
+    @include m.tablet {
+     padding: 2rem;       
+    }
+
+    .time_title {
+        color: v.$darkRaspberry;
+        margin-top: 0;
+        font-size: 1.8rem;
+        font-family: v.$font_principal;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-align: start;
+
+        @include m.tablet {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+/* Section nutrition */
+.nutrition {
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            font-size: 1.6rem;
+        }
+    }
+
+    .nutrition_table {
+        width: 100%;
+
+        tr {
+            width: 100%;
+            border-bottom: 1px solid v.$lightGrey;
+            padding: 1rem;
+            display: block;
+
+            &:last-child {
+                border: none;
+                margin-bottom: 3rem;
+            }
+
+            td {
+                display: inline-block;
+                width: 49%;
+                padding: 0 2rem;
+            }
+
+            span {
+                font-weight: 600;
+                color: v.$nutmeg;
+            }
+        }
+
+    }
+}

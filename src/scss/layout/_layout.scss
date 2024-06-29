@@ -81,10 +81,7 @@
     
     li {
         margin-bottom: 1.5rem;
-
-        p {
-            padding-left: 2rem;
-        }
+        padding-left: 2rem;
     }
 
     &:last-child {
@@ -93,6 +90,32 @@
     
     span {
         font-weight: 800;
+    }
+}
+
+/* Estilos a las listas independiente */
+.time_list {
+    li {
+        &::marker {
+            color: v.$darkRaspberry;
+        }
+    }
+}
+
+.ingredients_list {
+    li {
+        &::marker {
+            color: v.$nutmeg;
+        }
+    }
+}
+
+.instructions_list {
+    li {
+        &::marker {
+            color: v.$nutmeg;
+            font-weight: bold;
+        }
     }
 }
 
